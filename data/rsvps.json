@@ -1,0 +1,15 @@
+[
+  {
+    "name": "Hamza & Ayesha",
+    "phone": "+92 321 1234567",
+    "guests": "2",
+    "dietary": "Standard Banquet",
+    "attending": {
+      "mehndi": true,
+      "barat": true,
+      "walima": true
+    },
+    "id": "rsvp_1794387092454_w5ry1",
+    "createdAt": "2026-11-11T08:51:32.454Z"
+  }
+]

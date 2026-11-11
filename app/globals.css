@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .animate-fadeIn {
+    animation: fadeIn 0.3s ease-out;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(8px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .jali-bg {
+    background-color: #f5edd8;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80'%3E%3Crect width='80' height='80' fill='%23F5EDD8'/%3E%3Cpath d='M40 4 L76 40 L40 76 L4 40 Z' fill='none' stroke='%23E0C99A' stroke-width='1'/%3E%3Cpath d='M40 14 L66 40 L40 66 L14 40 Z' fill='none' stroke='%23E8D4AE' stroke-width='0.7'/%3E%3Ccircle cx='40' cy='40' r='5' fill='none' stroke='%23D4B882' stroke-width='0.8'/%3E%3Ccircle cx='40' cy='4' r='2.5' fill='%23E0C99A'/%3E%3Ccircle cx='40' cy='76' r='2.5' fill='%23E0C99A'/%3E%3Ccircle cx='4' cy='40' r='2.5' fill='%23E0C99A'/%3E%3Ccircle cx='76' cy='40' r='2.5' fill='%23E0C99A'/%3E%3Cpath d='M40 4 L40 14 M76 40 L66 40 M40 76 L40 66 M4 40 L14 40' stroke='%23D4C090' stroke-width='0.5'/%3E%3C/svg%3E");
+    background-size: 80px 80px;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f5edd8;
+}
+::-webkit-scrollbar-thumb {
+  background: #c59b4b;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #9e7332;
+}
